@@ -1,0 +1,2 @@
+x = startx
+y = starty

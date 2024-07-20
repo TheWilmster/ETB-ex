@@ -1,0 +1,5 @@
+instance_destroy()
+if (sprite_index == spr_shotgunbullet)
+    instance_create((x + (image_xscale * 15)), (y + 18), obj_cloudeffect)
+if (sprite_index == spr_shotgunbulletdown)
+    instance_create((x + (image_xscale * 4)), (y + 25), obj_cloudeffect)

@@ -1,0 +1,7 @@
+draw_set_color(c_white)
+draw_set_font(font0)
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+draw_text(480, 100, "Disclaimer:")
+draw_text(480, 200, "This is a very EARLY TEST BUILD and isnt much in term of polish/content. Hope this\nwill give you an idea anyway of how the game is going to play. Also, dont forget to report any bug in\n#bugreport on the Pizza Tower discord if you see anything strange!!")
+draw_text(480, 300, "\nControls:\nArrow Keys: Move\nZ: Jump\nX: Dash\nEnter: Pause")

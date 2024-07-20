@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_wind",
+  "name":"shdr_wind",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}
