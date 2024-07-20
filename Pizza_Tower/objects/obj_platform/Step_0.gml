@@ -1,4 +1,4 @@
-if (obj_player.bbox_bottom < y - obj_player.vsp && created == 0)
+if (obj_player.bbox_bottom < y && created == 0)
 {
     alarm[0] = 1
     created = 1
