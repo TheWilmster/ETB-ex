@@ -12,7 +12,7 @@ function scr_player_grabbing()
 	}
 	if (place_meeting(x, (y + 1), obj_collisionparent) && vsp > 0)
 	    jumpstop = 0
-	if (((place_meeting((x + 1), y, obj_collisionparent) && xscale == 1) || (place_meeting((x - 1), y, obj_collisionparent) && xscale == -1)) && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (((place_meeting((x + 1), y, obj_collisionparent) && xscale == 1) || (place_meeting((x - 1), y, obj_collisionparent) && xscale == -1)) && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	    movespeed = 0
 	if (xscale == 1 && move == -1)
 	    movespeed = 0

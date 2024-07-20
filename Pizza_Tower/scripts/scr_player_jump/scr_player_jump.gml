@@ -10,7 +10,7 @@ function scr_player_jump()
 	    movespeed = 0
 	if (move != 0 && movespeed < 6)
 	    movespeed += 0.5
-	if ((place_meeting((x + 1), y, obj_collisionparent) && move == 1) || (place_meeting((x - 1), y, obj_collisionparent) && move == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slopes)))))
+	if ((place_meeting((x + 1), y, obj_collisionparent) && move == 1) || (place_meeting((x - 1), y, obj_collisionparent) && move == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slope)))))
 	    movespeed = 0
 	if (xscale == 1 && move == -1)
 	{

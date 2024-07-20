@@ -78,7 +78,7 @@ function scr_player_mach2()
 	    jumpstop = 0
 	if (input_buffer_jump < 8 && place_meeting(x, (y + 1), obj_collisionparent) && (!((move == 1 && xscale == -1))) && (!((move == -1 && xscale == 1))) && key_attack)
 	    vsp = -9
-	if (place_meeting((x + 1), y, obj_bumpable) && xscale == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (place_meeting((x + 1), y, obj_bumpable) && xscale == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    machhitAnim = 0
 	    state = 50
@@ -91,7 +91,7 @@ function scr_player_mach2()
 	    if (!audio_is_playing(sfx_bump))
 	        audio_play_sound(sfx_bump, 1, false)
 	}
-	else if (place_meeting((x - 1), y, obj_bumpable) && xscale == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	else if (place_meeting((x - 1), y, obj_bumpable) && xscale == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    machhitAnim = 0
 	    state = 50

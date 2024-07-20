@@ -3,16 +3,16 @@ function scr_player_normal()
 	scr_getinput()
 	move = (key_left + key_right)
 	hsp = (move * movespeed)
-	if (key_attack && place_meeting(x, (y + 1), obj_collisionparent) && (!((place_meeting((x + 1), y, obj_collisionparent) && xscale == 1 && (!(place_meeting((x + xscale), y, obj_slopes)))))) && (!((place_meeting((x - 1), y, obj_collisionparent) && xscale == -1 && (!(place_meeting((x + xscale), y, obj_slopes)))))))
+	if (key_attack && place_meeting(x, (y + 1), obj_collisionparent) && (!((place_meeting((x + 1), y, obj_collisionparent) && xscale == 1 && (!(place_meeting((x + xscale), y, obj_slope)))))) && (!((place_meeting((x - 1), y, obj_collisionparent) && xscale == -1 && (!(place_meeting((x + xscale), y, obj_slope)))))))
 	{
 	    jumpAnim = 1
 	    state = 47
 	    movespeed = 0
 	    image_index = 0
 	}
-	if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && xscale == 1 && move == 1 && (!(place_meeting((x + 1), y, obj_slopes))))
+	if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && xscale == 1 && move == 1 && (!(place_meeting((x + 1), y, obj_slope))))
 	    movespeed = 0
-	if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && xscale == -1 && move == -1 && (!(place_meeting((x - 1), y, obj_slopes))))
+	if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && xscale == -1 && move == -1 && (!(place_meeting((x - 1), y, obj_slope))))
 	    movespeed = 0
 	jumpstop = 0
 	if (place_meeting(x, (y + 1), obj_collisionparent) && xscale == 1 && move == -1)

@@ -8,7 +8,7 @@ if (place_meeting(x, (y - 1), obj_player) && obj_player.x >= (x - 8) && obj_play
     obj_player.vsp = 10
     instance_destroy()
 }
-if place_meeting(x, (y + 1), obj_wall)
+if place_meeting(x, (y + 1), obj_solid)
 {
     hsp = 0
     bounce = 0

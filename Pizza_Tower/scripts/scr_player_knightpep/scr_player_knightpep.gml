@@ -11,9 +11,9 @@ function scr_player_knightpep()
 	    hsp = 0
 	    move = 0
 	}
-	if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && xscale == 1 && move == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && xscale == 1 && move == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	    movespeed = 0
-	if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && xscale == -1 && move == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && xscale == -1 && move == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	    movespeed = 0
 	if ((sprite_index == spr_knightpep_idle || sprite_index == spr_knightpep_walk) && key_attack)
 	{

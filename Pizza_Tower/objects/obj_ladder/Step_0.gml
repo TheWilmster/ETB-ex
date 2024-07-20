@@ -2,7 +2,7 @@ if place_meeting(x, (y - 1), obj_player)
 {
     with (obj_player)
     {
-        if (place_meeting(x, (y + 1), obj_ladder) && key_down && state == 44 && place_meeting(x, (y + 1), obj_onewaywall))
+        if (place_meeting(x, (y + 1), obj_ladder) && key_down && state == 44 && place_meeting(x, (y + 1), obj_platform))
         {
             audio_sound_gain(sfx_climbdown, 0.7, 0)
             if (!audio_is_playing(sfx_climbdown))

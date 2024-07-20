@@ -5,18 +5,18 @@ function scr_player_barrelmach2()
 	movespeed = 10
 	if (vsp < 12)
 	    vsp += grav
-	if (!(place_meeting(x, (y + 1), obj_wall)))
+	if (!(place_meeting(x, (y + 1), obj_solid)))
 	{
 	    state = 61
 	    image_index = 0
 	}
-	if ((!key_attack) && place_meeting(x, (y + 1), obj_wall))
+	if ((!key_attack) && place_meeting(x, (y + 1), obj_solid))
 	{
 	    state = 62
 	    image_index = 0
 	    mach2 = 0
 	}
-	if (place_meeting((x + 1), y, obj_wall) && image_xscale == 1)
+	if (place_meeting((x + 1), y, obj_solid) && image_xscale == 1)
 	{
 	    barrel = 0
 	    state = 50
@@ -36,7 +36,7 @@ function scr_player_barrelmach2()
 	    instance_create((x + random_range(15, -15)), (y + random_range(15, -15)), obj_wooddebris)
 	    instance_create((x + random_range(15, -15)), (y + random_range(15, -15)), obj_wooddebris)
 	}
-	if (place_meeting((x - 1), y, obj_wall) && image_xscale == -1)
+	if (place_meeting((x - 1), y, obj_solid) && image_xscale == -1)
 	{
 	    barrel = 0
 	    state = 50
@@ -59,7 +59,7 @@ function scr_player_barrelmach2()
 	sprite_index = spr_player_barrelmach
 	image_speed = 0.35
 	instance_create(x, y, obj_mach2effect)
-	if ((!instance_exists(obj_dashcloud)) && place_meeting(x, (y + 1), obj_wall))
+	if ((!instance_exists(obj_dashcloud)) && place_meeting(x, (y + 1), obj_solid))
 	    instance_create(x, y, obj_dashcloud)
 	scr_collideandmove()
 }

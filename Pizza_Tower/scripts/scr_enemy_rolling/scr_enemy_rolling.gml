@@ -15,7 +15,7 @@ function scr_enemy_rolling()
 	}
 	sprite_index = rollingspr
 	image_speed = 0.35
-	if (((place_meeting((x + 1), y, obj_enemiesbumpable) && image_xscale == -1) || (place_meeting((x - 1), y, obj_enemiesbumpable) && image_xscale == 1)) && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (((place_meeting((x + 1), y, obj_enemiesbumpable) && image_xscale == -1) || (place_meeting((x - 1), y, obj_enemiesbumpable) && image_xscale == 1)) && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    state = 76
 	    sprite_index = hitwallspr

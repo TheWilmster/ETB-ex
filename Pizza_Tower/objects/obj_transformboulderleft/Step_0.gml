@@ -1,7 +1,7 @@
 hsp = (image_xscale * 10)
 if (vsp < 12)
     vsp += grav
-if place_meeting((x - 1), y, obj_wall)
+if place_meeting((x - 1), y, obj_solid)
 {
     with (obj_player)
     {

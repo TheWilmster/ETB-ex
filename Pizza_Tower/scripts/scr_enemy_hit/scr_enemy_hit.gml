@@ -36,7 +36,7 @@ function scr_enemy_hit()
 	}
 	image_speed = 0.35
 	scr_collideandmoveonlywall()
-	if (((place_meeting((x + 1), y, obj_enemiesbumpable) && image_xscale == -1) || (place_meeting((x - 1), y, obj_enemiesbumpable) && image_xscale == 1)) && floor(vsp) <= 0 && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (((place_meeting((x + 1), y, obj_enemiesbumpable) && image_xscale == -1) || (place_meeting((x - 1), y, obj_enemiesbumpable) && image_xscale == 1)) && floor(vsp) <= 0 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    scr_sound(sfx_facestomp)
 	    image_index = 0

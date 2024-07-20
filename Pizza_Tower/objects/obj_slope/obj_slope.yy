@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_slopes",
+  "%Name":"obj_slope",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_slopes",
+  "name":"obj_slope",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Collision System",
+    "path":"folders/Objects/Systems/Collision System.yy",
   },
   "parentObjectId":{
-    "name":"obj_collisionparent",
-    "path":"objects/obj_collisionparent/obj_collisionparent.yy",
+    "name":"obj_enemiesbumpable",
+    "path":"objects/obj_enemiesbumpable/obj_enemiesbumpable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

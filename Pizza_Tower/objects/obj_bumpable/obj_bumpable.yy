@@ -6,8 +6,8 @@
   "name":"obj_bumpable",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Collision System",
+    "path":"folders/Objects/Systems/Collision System.yy",
   },
   "parentObjectId":{
     "name":"obj_enemiesbumpable",

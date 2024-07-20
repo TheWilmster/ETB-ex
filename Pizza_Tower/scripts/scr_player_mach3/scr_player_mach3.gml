@@ -66,7 +66,7 @@ function scr_player_mach3()
 	    flash = 0
 	    state = 15
 	}
-	if (place_meeting((x + 1), y, obj_bumpable) && xscale == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (place_meeting((x + 1), y, obj_bumpable) && xscale == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    state = 50
 	    scr_sound(sfx_superimpact)
@@ -99,7 +99,7 @@ function scr_player_mach3()
 	    if (!audio_is_playing(sfx_bump))
 	        audio_play_sound(sfx_bump, 1, false)
 	}
-	if (place_meeting((x - 1), y, obj_bumpable) && xscale == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (place_meeting((x - 1), y, obj_bumpable) && xscale == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    state = 50
 	    scr_sound(sfx_superimpact)

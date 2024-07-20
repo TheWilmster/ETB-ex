@@ -1,4 +1,4 @@
-if (place_meeting((x + 1), y, obj_wall) || place_meeting((x - 1), y, obj_wall))
+if (place_meeting((x + 1), y, obj_solid) || place_meeting((x - 1), y, obj_solid))
     instance_destroy()
 if (vsp < 12)
     vsp += grav

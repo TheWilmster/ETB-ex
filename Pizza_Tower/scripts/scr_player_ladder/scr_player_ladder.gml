@@ -54,7 +54,7 @@ function scr_player_ladder()
 	    vsp = -9
 	    image_index = 0
 	}
-	if (key_down && place_meeting(x, (y + 1), obj_collisionparent) && (!(place_meeting(x, y, obj_onewaywall))))
+	if (key_down && place_meeting(x, (y + 1), obj_collisionparent) && (!(place_meeting(x, y, obj_platform))))
 	{
 	    state = 0
 	    image_index = 0

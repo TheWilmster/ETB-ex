@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Unused",
-    "path":"folders/Objects/Level Structure/Level Mechanics/Unused.yy",
+    "path":"folders/Objects/Unused.yy",
   },
   "parentObjectId":{
     "name":"obj_collisionparent",

@@ -41,7 +41,7 @@ function scr_player_bombpep()
 	    instance_create(x, y, obj_bombexplosion)
 	    sprite_index = spr_bombpep_end
 	}
-	if (place_meeting((x + 1), y, obj_collisionparent) && xscale == 1 && hsp != 0 && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (place_meeting((x + 1), y, obj_collisionparent) && xscale == 1 && hsp != 0 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    scr_sound(sfx_bump)
 	    instance_create((x + 10), (y + 10), obj_bumpeffect)
@@ -49,7 +49,7 @@ function scr_player_bombpep()
 	    bombpephitwall += 1
 	    xscale *= -1
 	}
-	if (place_meeting((x - 1), y, obj_collisionparent) && xscale == -1 && hsp != 0 && (!(place_meeting((x + sign(hsp)), y, obj_slopes))))
+	if (place_meeting((x - 1), y, obj_collisionparent) && xscale == -1 && hsp != 0 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    scr_sound(sfx_bump)
 	    instance_create((x - 10), (y + 10), obj_bumpeffect)

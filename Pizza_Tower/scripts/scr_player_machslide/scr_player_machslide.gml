@@ -34,7 +34,7 @@ function scr_player_machslide()
 	    mach2 = 35
 	    instance_create(x, y, obj_jumpdust)
 	}
-	if (place_meeting((x + 1), y, obj_collisionparent) && xscale == 1 && (!(place_meeting((x + 1), y, obj_slopes))))
+	if (place_meeting((x + 1), y, obj_collisionparent) && xscale == 1 && (!(place_meeting((x + 1), y, obj_slope))))
 	{
 	    movespeed = 0
 	    state = 50
@@ -49,7 +49,7 @@ function scr_player_machslide()
 	    if (!audio_is_playing(sfx_bump))
 	        audio_play_sound(sfx_bump, 1, false)
 	}
-	if (place_meeting((x - 1), y, obj_collisionparent) && xscale == -1 && (!(place_meeting((x - 1), y, obj_slopes))))
+	if (place_meeting((x - 1), y, obj_collisionparent) && xscale == -1 && (!(place_meeting((x - 1), y, obj_slope))))
 	{
 	    movespeed = 0
 	    state = 50

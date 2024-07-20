@@ -19,9 +19,9 @@ if (stunned == 1)
 if (charging == 1)
 {
     hsp = (image_xscale * movespeed)
-    if (!(place_meeting((x + 50), (y + 3), obj_wall)))
+    if (!(place_meeting((x + 50), (y + 3), obj_solid)))
         image_xscale = -1
-    if (!(place_meeting((x - 50), (y + 3), obj_wall)))
+    if (!(place_meeting((x - 50), (y + 3), obj_solid)))
         image_xscale = 1
     if (chargingdown == 0)
     {

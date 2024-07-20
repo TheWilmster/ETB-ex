@@ -4,9 +4,9 @@ image_speed = 0.35
 if (roam == 1 && attack == 0)
 {
     hsp = (image_xscale * 2)
-    if (place_meeting((x + 1), y, obj_wall) && image_xscale == 1)
+    if (place_meeting((x + 1), y, obj_solid) && image_xscale == 1)
         image_xscale = -1
-    if (place_meeting((x - 1), y, obj_wall) && image_xscale == -1)
+    if (place_meeting((x - 1), y, obj_solid) && image_xscale == -1)
         image_xscale = 1
 }
 if (roam == 0 && attack == 0)
@@ -32,7 +32,7 @@ if (place_meeting((x + 1), y, obj_player) || place_meeting((x - 1), y, obj_playe
             obj_player.image_index = 0
             obj_player.flash = 1
             obj_player.hsp = (sign((x - other.x)) * 5)
-            if (!(place_meeting(x, (y + 1), obj_wall)))
+            if (!(place_meeting(x, (y + 1), obj_solid)))
             {
                 hurtbounce = 1
                 vsp = -5
@@ -45,7 +45,7 @@ if (place_meeting((x + 1), y, obj_player) || place_meeting((x - 1), y, obj_playe
             obj_player.image_index = 0
             obj_player.flash = 1
             obj_player.hsp = (sign((x - other.x)) * 5)
-            if (!(place_meeting(x, (y + 1), obj_wall)))
+            if (!(place_meeting(x, (y + 1), obj_solid)))
             {
                 hurtbounce = 1
                 vsp = -5

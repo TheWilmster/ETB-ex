@@ -5,8 +5,8 @@ if key_start
     {
         pause = 1
         instance_deactivate_all(true)
-        instance_create(((view_xview[(0 << 0)] + 480) + 200), ((view_yview[(0 << 0)] + 270) - 200), obj_exit)
-        instance_create(((view_xview[(0 << 0)] + 480) - 200), ((view_yview[(0 << 0)] + 270) - 200), obj_retry)
+        instance_create(((camera_get_view_x(view_camera[0]) + 480) + 200), ((camera_get_view_y(view_camera[0]) + 270) - 200), obj_exit)
+        instance_create(((camera_get_view_y(view_camera[0]) + 480) - 200), ((camera_get_view_y(view_camera[0]) + 270) - 200), obj_retry)
     }
     else
     {

@@ -41,7 +41,7 @@ with (obj_player)
         }
         else
             hsp = ((-xscale) * 5)
-        if (!(place_meeting(x, (y + 1), obj_wall)))
+        if (!(place_meeting(x, (y + 1), obj_solid)))
         {
             hurtbounce = 1
             vsp = -5

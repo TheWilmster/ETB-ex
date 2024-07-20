@@ -1,4 +1,4 @@
-if (place_meeting((x + 1), y, obj_wall) || place_meeting((x - 1), y, obj_wall))
+if (place_meeting((x + 1), y, obj_solid) || place_meeting((x - 1), y, obj_solid))
     hsp = 0
 if (place_meeting((x - 5), y, obj_player) && obj_player.image_xscale == 1 && (obj_player.state == 47 || obj_player.state == 48) && rolling == 0)
 {

@@ -1,6 +1,6 @@
 if (vsp < 12)
     vsp += grav
-if place_meeting(x, (y + 1), obj_wall)
+if place_meeting(x, (y + 1), obj_solid)
 {
     hsp = 0
     bounce = 0

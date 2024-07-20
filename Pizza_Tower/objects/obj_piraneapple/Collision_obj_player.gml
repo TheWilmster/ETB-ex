@@ -9,7 +9,7 @@ with (obj_player)
         obj_player.image_index = 0
         obj_player.flash = 1
         obj_player.hsp = (sign((x - other.x)) * 5)
-        if (!(place_meeting(x, (y + 1), obj_wall)))
+        if (!(place_meeting(x, (y + 1), obj_solid)))
         {
             hurtbounce = 1
             vsp = -5
@@ -22,7 +22,7 @@ with (obj_player)
         obj_player.image_index = 0
         obj_player.flash = 1
         obj_player.hsp = (sign((x - other.x)) * 5)
-        if (!(place_meeting(x, (y + 1), obj_wall)))
+        if (!(place_meeting(x, (y + 1), obj_solid)))
         {
             hurtbounce = 1
             vsp = -5

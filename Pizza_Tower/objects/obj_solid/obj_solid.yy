@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
+  "%Name":"obj_solid",
   "eventList":[],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_solid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Collision System",
+    "path":"folders/Objects/Systems/Collision System.yy",
   },
   "parentObjectId":{
     "name":"obj_bumpable",

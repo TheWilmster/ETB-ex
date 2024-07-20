@@ -6,8 +6,8 @@
   "name":"obj_enemylimit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Unused",
+    "path":"folders/Objects/Unused.yy",
   },
   "parentObjectId":null,
   "persistent":false,
