@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_enemy_walk",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"States",
+    "path":"folders/Scripts/Enemies/States.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

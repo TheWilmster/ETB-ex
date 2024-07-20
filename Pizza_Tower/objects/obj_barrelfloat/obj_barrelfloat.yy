@@ -12,8 +12,8 @@
   "name":"obj_barrelfloat",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Unused",
+    "path":"folders/Objects/Level Structure/Level Mechanics/Unused.yy",
   },
   "parentObjectId":null,
   "persistent":false,

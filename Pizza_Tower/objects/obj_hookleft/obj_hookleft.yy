@@ -10,8 +10,8 @@
   "name":"obj_hookleft",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Unused",
+    "path":"folders/Objects/Level Structure/Level Mechanics/Unused.yy",
   },
   "parentObjectId":null,
   "persistent":false,

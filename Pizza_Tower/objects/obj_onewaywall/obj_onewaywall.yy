@@ -10,8 +10,8 @@
   "name":"obj_onewaywall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Collision System",
+    "path":"folders/Objects/Systems/Collision System.yy",
   },
   "parentObjectId":null,
   "persistent":false,

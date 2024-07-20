@@ -11,8 +11,8 @@
   "name":"obj_endlevelfade",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Effects & Visuals",
+    "path":"folders/Objects/Effects & Visuals.yy",
   },
   "parentObjectId":null,
   "persistent":true,

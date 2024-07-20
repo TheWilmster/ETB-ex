@@ -1102,8 +1102,8 @@
   ],
   "name":"demo_startroom",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Unused Tower Hub",
+    "path":"folders/Rooms/Unused Tower Hub.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

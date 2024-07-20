@@ -1813,8 +1813,8 @@
   ],
   "name":"normalT_bonus2",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Tutorial",
+    "path":"folders/Rooms/Levels/Tutorial.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

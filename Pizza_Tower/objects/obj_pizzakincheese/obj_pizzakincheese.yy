@@ -10,8 +10,8 @@
   "name":"obj_pizzakincheese",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Toppins",
+    "path":"folders/Objects/Level Structure/Collectables/Toppins.yy",
   },
   "parentObjectId":null,
   "persistent":false,

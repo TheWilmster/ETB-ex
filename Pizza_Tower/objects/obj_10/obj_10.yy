@@ -9,8 +9,8 @@
   "name":"obj_10",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Unused",
+    "path":"folders/Objects/Effects & Visuals/Unused.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -13,8 +13,8 @@
   "name":"obj_collect",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Collectables",
+    "path":"folders/Objects/Level Structure/Collectables.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -16,8 +16,8 @@
   "name":"obj_coolpinea",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Unused",
+    "path":"folders/Objects/Enemies/Unused.yy",
   },
   "parentObjectId":{
     "name":"obj_baddie",

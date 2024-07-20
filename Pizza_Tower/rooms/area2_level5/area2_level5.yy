@@ -871,8 +871,8 @@
   ],
   "name":"area2_level5",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Area 2",
+    "path":"folders/Rooms/Levels/Unused/Area 2.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

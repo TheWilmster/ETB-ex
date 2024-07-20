@@ -9,8 +9,8 @@
   "name":"obj_disclaimer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Game Start",
+    "path":"folders/Objects/Game Start.yy",
   },
   "parentObjectId":null,
   "persistent":false,

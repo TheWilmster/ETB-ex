@@ -9,8 +9,8 @@
   "name":"obj_enemyblock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Level Mechanics",
+    "path":"folders/Objects/Level Structure/Level Mechanics.yy",
   },
   "parentObjectId":{
     "name":"obj_bumpable",

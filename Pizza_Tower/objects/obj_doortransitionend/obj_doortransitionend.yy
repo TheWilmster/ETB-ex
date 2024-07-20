@@ -9,8 +9,8 @@
   "name":"obj_doortransitionend",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Transition",
+    "path":"folders/Objects/Level Structure/Warps/Doors/Transition.yy",
   },
   "parentObjectId":null,
   "persistent":false,

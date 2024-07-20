@@ -9,8 +9,8 @@
   "name":"obj_onewaysolid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Collision System",
+    "path":"folders/Objects/Systems/Collision System.yy",
   },
   "parentObjectId":{
     "name":"obj_collisionparent",

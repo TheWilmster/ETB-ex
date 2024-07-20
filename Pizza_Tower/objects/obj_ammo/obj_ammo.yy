@@ -9,8 +9,8 @@
   "name":"obj_ammo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Unused",
+    "path":"folders/Objects/Level Structure/Collectables/Unused.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -10,8 +10,8 @@
   "name":"obj_door2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Doors",
+    "path":"folders/Objects/Level Structure/Warps/Doors.yy",
   },
   "parentObjectId":{
     "name":"obj_door",
