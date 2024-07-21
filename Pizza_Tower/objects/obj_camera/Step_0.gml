@@ -9,12 +9,12 @@ if (global.panic == 1)
 else
     timestop = 1
 
-var background_width = [];
-var background_height = [];
+background_width = [];
+background_height = [];
 var bg_num = 5;
 for (var i = 1; i < bg_num; i++) {
 	var b = string_concat("Backgrounds_", i);
-	if layer_exists(b) && (room == normalT_bonus1 || room == normalT_room1 || room == normalT_room2 || room == normalT_room3 || room == normalT_room4 || room == normalT_runbackpassage) {
+	if layer_exists(b) && (layer_background_get_sprite(layer_background_get_id(b))) != -1 {
 		array_push(background_width, sprite_get_width(layer_background_get_sprite(layer_background_get_id(b))))
 		array_push(background_height, sprite_get_height(layer_background_get_sprite(layer_background_get_id(b))))
 	} else {

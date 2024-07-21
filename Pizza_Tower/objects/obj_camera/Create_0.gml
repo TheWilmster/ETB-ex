@@ -11,3 +11,5 @@ shake_mag = 0
 shake_mag_acc = 0
 timestop = 1
 zoom = 0
+background_width = [];
+background_height = [];
