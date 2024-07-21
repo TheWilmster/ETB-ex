@@ -10,3 +10,4 @@ with (other.id)
     cantcollect = 0
     flicker = 0
 }
+depth = 2;

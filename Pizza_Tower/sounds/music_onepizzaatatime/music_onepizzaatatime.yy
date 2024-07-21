@@ -12,8 +12,8 @@
   "duration":107.66402,
   "name":"music_onepizzaatatime",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

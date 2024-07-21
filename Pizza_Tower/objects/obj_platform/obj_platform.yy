@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_baddie",
-    "path":"sprites/spr_baddie/spr_baddie.yy",
+    "name":"spr_disappointment",
+    "path":"sprites/spr_disappointment/spr_disappointment.yy",
   },
   "spriteMaskId":null,
   "visible":false,

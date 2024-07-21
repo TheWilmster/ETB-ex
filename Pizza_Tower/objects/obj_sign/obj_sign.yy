@@ -8,8 +8,8 @@
   "name":"obj_sign",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Effects & Visuals",
+    "path":"folders/Objects/Effects & Visuals.yy",
   },
   "parentObjectId":null,
   "persistent":false,

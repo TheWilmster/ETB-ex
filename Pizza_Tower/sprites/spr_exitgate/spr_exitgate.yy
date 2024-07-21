@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Level Mechanics",
+    "path":"folders/Sprites/Level Mechanics.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

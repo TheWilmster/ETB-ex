@@ -8,8 +8,8 @@
   "name":"obj_spring",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Unused",
+    "path":"folders/Objects/Unused.yy",
   },
   "parentObjectId":{
     "name":"obj_collisionparent",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_baddie",
-    "path":"sprites/spr_baddie/spr_baddie.yy",
+    "name":"spr_disappointment",
+    "path":"sprites/spr_disappointment/spr_disappointment.yy",
   },
   "spriteMaskId":null,
   "visible":true,

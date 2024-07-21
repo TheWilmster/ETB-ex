@@ -10,8 +10,8 @@
   "name":"obj_skateboard",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Level Mechanics",
+    "path":"folders/Objects/Level Structure/Level Mechanics.yy",
   },
   "parentObjectId":null,
   "persistent":false,
