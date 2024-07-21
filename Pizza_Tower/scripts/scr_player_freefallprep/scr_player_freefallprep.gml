@@ -12,7 +12,7 @@ function scr_player_freefallprep()
 	crouchslideAnim = 1
 	crouchAnim = 1
 	if (floor(image_index) == 5)
-	    state = 48
+	    state = states.mach2
 	sprite_index = spr_player_mach2jump
 	image_speed = 0.35
 	instance_create(x, y, obj_mach3effect)

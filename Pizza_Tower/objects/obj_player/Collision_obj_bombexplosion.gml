@@ -23,5 +23,5 @@ if (hurted == 0)
     vsp = -4
     image_index = 0
     sprite_index = spr_bombpep_end
-    state = 5
+    state = states.bombpep
 }

@@ -15,7 +15,7 @@ if (place_meeting((x - 5), y, obj_player) && obj_player.image_xscale == 1 && (ob
     vsp = -3
     hsp = 3
     bounce = 1
-    obj_player.state = 35
+    obj_player.state = states.tackle
     obj_player.image_index = 0
     obj_player.mach2 = 0
     audio_sound_gain(sfx_bump, 0.7, 0)
@@ -27,7 +27,7 @@ if (place_meeting((x + 5), y, obj_player) && obj_player.image_xscale == -1 && (o
     vsp = -3
     hsp = -3
     bounce = 1
-    obj_player.state = 35
+    obj_player.state = states.tackle
     obj_player.image_index = 0
     obj_player.mach2 = 0
     audio_sound_gain(sfx_bump, 0.7, 0)

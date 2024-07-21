@@ -23,7 +23,7 @@ with (obj_player)
         image_index = 0
         obj_player.image_index = 0
         obj_player.flash = 1
-        state = 50
+        state = states.bump
     }
     else if (state == 5 && hurted == 0)
         instance_create(x, y, obj_bombexplosion)
@@ -31,7 +31,7 @@ with (obj_player)
     {
         scr_sound(va_hurt1, va_hurt2, va_hurt3)
         instance_create(x, y, obj_spikehurteffect)
-        state = 51
+        state = states.hurt
         image_index = 0
         flash = 1
         if (x != other.x)

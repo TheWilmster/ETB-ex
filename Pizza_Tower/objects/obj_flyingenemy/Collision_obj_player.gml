@@ -11,7 +11,7 @@ if (obj_player.y < y && obj_player.state != 51 && obj_player.attacking == 0)
             obj_player.vsp = -11
         if obj_player.key_up
         {
-            obj_player.state = 10
+            obj_player.state = states.highjump
             obj_player.vsp = -14
         }
         instance_create(obj_player.x, (obj_player.y + 40), obj_stompeffect)

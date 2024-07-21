@@ -18,7 +18,7 @@ function scr_player_machfreefall()
 	if (place_meeting((x + 1), y, obj_bumpable) && image_xscale == 1)
 	{
 	    machhitAnim = 0
-	    state = 50
+	    state = states.bump
 	    hsp = -2.5
 	    vsp = -2.5
 	    mach2 = 0
@@ -31,7 +31,7 @@ function scr_player_machfreefall()
 	else if (place_meeting((x - 1), y, obj_bumpable) && image_xscale == -1)
 	{
 	    machhitAnim = 0
-	    state = 50
+	    state = states.bump
 	    hsp = 2.5
 	    vsp = -2.5
 	    mach2 = 0
@@ -49,7 +49,7 @@ function scr_player_machfreefall()
 	        shake_mag_acc = (40 / room_speed)
 	    }
 	    bounce = 0
-	    state = 55
+	    state = states.freefallland
 	    jumpstop = 0
 	    image_index = 0
 	    with (instance_create(x, (y + 35), obj_bangeffect))

@@ -50,7 +50,7 @@ if (room == timesuproom)
     timestop = 1
 if (global.seconds == 0 && global.minutes == 0 && room != timesuproom)
 {
-    obj_player.state = 14
+    obj_player.state = states.timesup
     room = timesuproom
     obj_player.image_index = 0
 }

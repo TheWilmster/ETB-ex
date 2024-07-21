@@ -49,7 +49,7 @@ function scr_player_ladder()
 	{
 	    ladderbuffer = 20
 	    jumpAnim = 1
-	    state = 36
+	    state = states.jump
 	    machslideAnim = 1
 	    vsp = -9
 	    image_index = 0

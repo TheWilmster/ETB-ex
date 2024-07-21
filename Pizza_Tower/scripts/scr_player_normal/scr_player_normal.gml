@@ -6,7 +6,7 @@ function scr_player_normal()
 	if (key_attack && place_meeting(x, (y + 1), obj_collisionparent) && (!((place_meeting((x + 1), y, obj_collisionparent) && xscale == 1 && (!(place_meeting((x + xscale), y, obj_slope)))))) && (!((place_meeting((x - 1), y, obj_collisionparent) && xscale == -1 && (!(place_meeting((x + xscale), y, obj_slope)))))))
 	{
 	    jumpAnim = 1
-	    state = 47
+	    state = states.mach1
 	    movespeed = 0
 	    image_index = 0
 	}
@@ -32,14 +32,14 @@ function scr_player_normal()
 	if ((!(place_meeting(x, (y + 1), obj_collisionparent))) && (!key_jump))
 	{
 	    jumpAnim = 0
-	    state = 36
+	    state = states.jump
 	    machslideAnim = 1
 	    image_index = 0
 	}
 	if (key_jump && place_meeting(x, (y + 1), obj_collisionparent) && key_up && (!key_down) && (!key_attack) && move == 0)
 	{
 	    vsp = -12
-	    state = 10
+	    state = states.highjump
 	    image_index = 0
 	    machslideAnim = 1
 	    jumpAnim = 1
@@ -48,7 +48,7 @@ function scr_player_normal()
 	if (key_jump && place_meeting(x, (y + 1), obj_collisionparent) && (!key_down) && sprite_index != spr_player_Sjumpprep && input_buffer_jump >= 8)
 	{
 	    vsp = -9
-	    state = 36
+	    state = states.jump
 	    image_index = 0
 	    machslideAnim = 1
 	    jumpAnim = 1
@@ -58,7 +58,7 @@ function scr_player_normal()
 	{
 	    stompAnim = 0
 	    vsp = -9
-	    state = 36
+	    state = states.jump
 	    jumpAnim = 1
 	    jumpstop = 0
 	    image_index = 0
@@ -69,7 +69,7 @@ function scr_player_normal()
 	}
 	if ((key_down && place_meeting(x, (y + 1), obj_collisionparent)) || place_meeting(x, (y - 3), obj_collisionparent))
 	{
-	    state = 44
+	    state = states.crouch
 	    machslideAnim = 1
 	    landAnim = 0
 	    crouchAnim = 1

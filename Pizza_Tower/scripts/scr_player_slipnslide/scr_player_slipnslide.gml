@@ -25,7 +25,7 @@ function scr_player_slipnslide()
 	}
 	if (place_meeting((x + 1), y, obj_bumpable) && xscale == 1)
 	{
-	    state = 50
+	    state = states.bump
 	    hsp = -2
 	    vsp = -3
 	    mach2 = 0
@@ -37,7 +37,7 @@ function scr_player_slipnslide()
 	}
 	if (place_meeting((x - 1), y, obj_bumpable) && xscale == -1)
 	{
-	    state = 50
+	    state = states.bump
 	    hsp = 2
 	    vsp = -3
 	    mach2 = 0

@@ -6,7 +6,7 @@ function scr_player_timesup()
 	    scr_sound(sfx_punch1)
 	    scr_sound(sfx_freefallland)
 	    scr_sound(va_hurt1)
-	    state = 33
+	    state = states.gameover
 	    alarm[10] = 5
 	    vsp = -8
 	    hsp = -4

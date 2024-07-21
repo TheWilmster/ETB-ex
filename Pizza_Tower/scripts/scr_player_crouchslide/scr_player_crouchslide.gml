@@ -8,11 +8,11 @@ function scr_player_crouchslide()
 	if (mach2 >= 35 && (!key_down) && (!(place_meeting((x + 27), (y - 32), obj_collisionparent))) && (!(place_meeting((x - 27), (y - 32), obj_collisionparent))) && (!(place_meeting(x, (y - 32), obj_collisionparent))) && (!(place_meeting(x, (y - 16), obj_collisionparent))) && key_attack)
 	{
 	    machhitAnim = 1
-	    state = 48
+	    state = states.mach2
 	}
 	if (((hsp == 0 || (place_meeting((x + 1), y, obj_collisionparent) && xscale == 1) || (place_meeting((x - 1), y, obj_collisionparent) && xscale == -1)) && (!(place_meeting((x + sign(hsp)), y, obj_slope)))) || movespeed <= 0)
 	{
-	    state = 44
+	    state = states.crouch
 	    movespeed = 0
 	    mach2 = 0
 	    crouchslideAnim = 1
@@ -24,7 +24,7 @@ function scr_player_crouchslide()
 	if (place_meeting((x + 1), y, obj_collisionparent) && xscale == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    movespeed = 0
-	    state = 50
+	    state = states.bump
 	    hsp = -2.5
 	    vsp = -3
 	    mach2 = 0
@@ -39,7 +39,7 @@ function scr_player_crouchslide()
 	if (place_meeting((x - 1), y, obj_collisionparent) && xscale == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    movespeed = 0
-	    state = 50
+	    state = states.bump
 	    hsp = 2.5
 	    vsp = -3
 	    mach2 = 0

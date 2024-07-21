@@ -19,7 +19,7 @@ function scr_player_machslide()
 	if (floor(hsp) == 0 && move == -1 && xscale == 1 && key_attack)
 	{
 	    machhitAnim = 0
-	    state = 48
+	    state = states.mach2
 	    image_index = 0
 	    xscale = -1
 	    mach2 = 35
@@ -28,7 +28,7 @@ function scr_player_machslide()
 	if (floor(hsp) == 0 && move == 1 && xscale == -1 && key_attack)
 	{
 	    machhitAnim = 0
-	    state = 48
+	    state = states.mach2
 	    image_index = 0
 	    xscale = 1
 	    mach2 = 35
@@ -37,7 +37,7 @@ function scr_player_machslide()
 	if (place_meeting((x + 1), y, obj_collisionparent) && xscale == 1 && (!(place_meeting((x + 1), y, obj_slope))))
 	{
 	    movespeed = 0
-	    state = 50
+	    state = states.bump
 	    hsp = -2.5
 	    vsp = -3
 	    mach2 = 0
@@ -52,7 +52,7 @@ function scr_player_machslide()
 	if (place_meeting((x - 1), y, obj_collisionparent) && xscale == -1 && (!(place_meeting((x - 1), y, obj_slope))))
 	{
 	    movespeed = 0
-	    state = 50
+	    state = states.bump
 	    hsp = 2.5
 	    vsp = -3
 	    mach2 = 0

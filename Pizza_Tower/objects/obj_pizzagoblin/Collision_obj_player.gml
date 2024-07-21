@@ -2,7 +2,7 @@ stunned = 200
 if (place_meeting(x, y, obj_player) && state == 82 && obj_player.state == 0)
 {
     instance_create((x + (obj_player.xscale * 40)), y, obj_punchdust)
-    other.state = 6
+    other.state = states.grabbing
     other.movespeed = 0
     state = 85
 }
@@ -19,7 +19,7 @@ else
                 image_index = 0
                 stompAnim = 1
                 vsp = -14
-                state = 36
+                state = states.jump
                 instance_create(x, y, obj_bangeffect)
                 other.state = 84
                 other.stunned = 200
@@ -52,7 +52,7 @@ else
                 other.vsp = -5
                 instance_create(x, y, obj_bangeffect)
                 image_index = 0
-                state = 35
+                state = states.tackle
                 other.stunned = 200
             }
         }

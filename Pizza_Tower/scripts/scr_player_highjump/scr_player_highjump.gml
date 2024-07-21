@@ -17,7 +17,7 @@ function scr_player_highjump()
 	{
 	    if (vsp < 0.5)
 	        vsp /= 2
-	    state = 12
+	    state = states.facestomp
 	}
 	landAnim = 1
 	if ((!key_jump2) && jumpstop == 0 && vsp < 0)
@@ -50,7 +50,7 @@ function scr_player_highjump()
 	if (place_meeting(x, (y + 1), obj_collisionparent) && input_buffer_jump < 8 && (!key_down) && vsp > 0)
 	{
 	    vsp = -9
-	    state = 36
+	    state = states.jump
 	    jumpAnim = 1
 	    jumpstop = 0
 	    image_index = 0

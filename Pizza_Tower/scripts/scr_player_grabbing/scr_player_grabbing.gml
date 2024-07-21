@@ -21,19 +21,19 @@ function scr_player_grabbing()
 	if (key_attack && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    image_index = 0
-	    state = 24
+	    state = states.grab
 	}
 	if (key_attack && (!(place_meeting(x, (y + 1), obj_collisionparent))))
 	{
 	    scr_sound(sfx_woosh)
 	    image_index = 0
-	    state = 19
+	    state = states.player_throw
 	}
 	if (key_jump && (!(place_meeting(x, (y + 1), obj_collisionparent))))
 	{
 	    scr_sound(sfx_spin)
 	    vsp = -11
-	    state = 20
+	    state = states.slam
 	    image_index = 0
 	    image_speed = 0.35
 	}

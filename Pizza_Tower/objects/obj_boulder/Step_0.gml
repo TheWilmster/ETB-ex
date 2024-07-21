@@ -6,7 +6,7 @@ if (place_meeting((x - 5), y, obj_player) && obj_player.image_xscale == 1 && (ob
 {
     rolling = 1
     hsp = 7
-    obj_player.state = 35
+    obj_player.state = states.tackle
     obj_player.image_index = 0
     obj_player.mach2 = 0
     audio_sound_gain(sfx_bump, 0.7, 0)
@@ -17,7 +17,7 @@ if (place_meeting((x + 5), y, obj_player) && obj_player.image_xscale == -1 && (o
 {
     rolling = 1
     hsp = -7
-    obj_player.state = 35
+    obj_player.state = states.tackle
     obj_player.image_index = 0
     obj_player.mach2 = 0
     audio_sound_gain(sfx_bump, 0.7, 0)

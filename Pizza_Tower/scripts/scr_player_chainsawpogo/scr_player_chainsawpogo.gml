@@ -22,7 +22,7 @@ function scr_player_chainsawpogo()
 	}
 	if ((place_meeting(x, (y + 1), obj_collisionparent) && vsp > 0) || (!key_chainsaw))
 	{
-	    state = 36
+	    state = states.jump
 	    jumpAnim = 0
 	    jumpstop = 0
 	}

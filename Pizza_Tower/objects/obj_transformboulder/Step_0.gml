@@ -9,7 +9,7 @@ if place_meeting((x + 1), y, obj_solid)
         {
             barrel = 0
             mask_index = spr_player_mask
-            state = 50
+            state = states.bump
             hsp = -2
             vsp = -2
             mach2 = 0

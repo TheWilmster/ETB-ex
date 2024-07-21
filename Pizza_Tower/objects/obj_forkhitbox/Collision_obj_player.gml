@@ -3,7 +3,7 @@ with (obj_player)
     if (state != 51 && state != 64 && state != 50 && hurted == 0 && barrel == 0)
     {
         instance_create(x, y, obj_spikehurteffect)
-        state = 51
+        state = states.hurt
         obj_player.image_index = 0
         obj_player.flash = 1
         if (x != other.x)
@@ -19,7 +19,7 @@ with (obj_player)
     else if (barrel == 1 && state != 64)
     {
         barrel = 0
-        state = 51
+        state = states.hurt
         obj_player.image_index = 0
         obj_player.flash = 1
         obj_player.hsp = (sign((x - other.x)) * 5)

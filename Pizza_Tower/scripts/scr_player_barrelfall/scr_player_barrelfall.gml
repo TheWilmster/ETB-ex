@@ -8,12 +8,12 @@ function scr_player_barrelfall()
 	    vsp -= 1
 	if place_meeting(x, (y + 1), obj_collisionparent)
 	{
-	    state = 57
+	    state = states.barrelcrouch
 	    image_index = 0
 	}
 	if place_meeting(x, y, obj_water2)
 	{
-	    state = 58
+	    state = states.barrelfloat
 	    image_index = 0
 	}
 	sprite_index = spr_player_barrelfall

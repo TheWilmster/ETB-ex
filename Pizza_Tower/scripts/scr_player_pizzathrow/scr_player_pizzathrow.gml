@@ -8,7 +8,7 @@ function scr_player_pizzathrow()
 	jumpstop = 0
 	if (global.pizza == 0 && (!instance_exists(obj_pizzabox)))
 	{
-	    state = 40
+	    state = states.smirk
 	    landAnim = 0
 	    movespeed = 4
 	    mach2 = 0
@@ -18,7 +18,7 @@ function scr_player_pizzathrow()
 	if (key_jump && place_meeting(x, (y + 1), obj_collisionparent) && (!key_down) && (!key_attack2) && (!instance_exists(obj_pizzabox)))
 	{
 	    vsp = -7
-	    state = 36
+	    state = states.jump
 	    image_index = 0
 	    machslideAnim = 1
 	    jumpAnim = 1

@@ -12,7 +12,7 @@ function scr_player_mach3()
 	if (key_down && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    machhitAnim = 0
-	    state = 46
+	    state = states.crouchslide
 	}
 	if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
 	{
@@ -32,7 +32,7 @@ function scr_player_mach3()
 	    sprite_index = spr_player_superjumpprep
 	    instance_create(x, y, obj_machsuperjump1)
 	    instance_create(x, y, obj_machsuperjump2)
-	    state = 43
+	    state = states.Sjumpprep
 	    hsp = 0
 	    image_index = 0
 	    flash = 1
@@ -40,7 +40,7 @@ function scr_player_mach3()
 	if ((!key_attack) && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    flash = 0
-	    state = 49
+	    state = states.machslide
 	    image_index = 0
 	    mach2 = 35
 	}
@@ -48,7 +48,7 @@ function scr_player_mach3()
 	{
 	    scr_sound(sfx_slide)
 	    flash = 0
-	    state = 49
+	    state = states.machslide
 	    image_index = 0
 	    mach2 = 35
 	}
@@ -56,7 +56,7 @@ function scr_player_mach3()
 	{
 	    scr_sound(sfx_slide)
 	    flash = 0
-	    state = 49
+	    state = states.machslide
 	    image_index = 0
 	    mach2 = 35
 	}
@@ -64,11 +64,11 @@ function scr_player_mach3()
 	{
 	    instance_create(x, y, obj_jumpdust)
 	    flash = 0
-	    state = 15
+	    state = states.machroll
 	}
 	if (place_meeting((x + 1), y, obj_bumpable) && xscale == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
-	    state = 50
+	    state = states.bump
 	    scr_sound(sfx_superimpact)
 	    with (obj_camera)
 	    {
@@ -101,7 +101,7 @@ function scr_player_mach3()
 	}
 	if (place_meeting((x - 1), y, obj_bumpable) && xscale == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
-	    state = 50
+	    state = states.bump
 	    scr_sound(sfx_superimpact)
 	    with (obj_camera)
 	    {
@@ -112,7 +112,7 @@ function scr_player_mach3()
 	    image_speed = 0.35
 	    flash = 0
 	    combo = 0
-	    state = 50
+	    state = states.bump
 	    hsp = 2.5
 	    vsp = -3
 	    mach2 = 0

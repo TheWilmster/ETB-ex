@@ -28,7 +28,7 @@ if (place_meeting((x + 1), y, obj_player) || place_meeting((x - 1), y, obj_playe
     {
         if (state != 51 && state != 56 && hurted == 0 && barrel == 0)
         {
-            state = 51
+            state = states.hurt
             obj_player.image_index = 0
             obj_player.flash = 1
             obj_player.hsp = (sign((x - other.x)) * 5)
@@ -41,7 +41,7 @@ if (place_meeting((x + 1), y, obj_player) || place_meeting((x - 1), y, obj_playe
         else if (barrel == 1 && (state != 57 || other.roam == 0))
         {
             barrel = 0
-            state = 51
+            state = states.hurt
             obj_player.image_index = 0
             obj_player.flash = 1
             obj_player.hsp = (sign((x - other.x)) * 5)

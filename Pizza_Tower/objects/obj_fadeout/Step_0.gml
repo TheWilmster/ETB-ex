@@ -12,7 +12,7 @@ with (obj_player)
 {
     if (other.fadein == 1 && place_meeting(x, y, obj_door))
     {
-        state = 39
+        state = states.comingoutdoor
         image_index = 0
     }
 }

@@ -20,19 +20,19 @@ function scr_player_grab()
 	if ((!key_attack) && sprite_index == spr_player_grab)
 	{
 	    scr_sound(sfx_woosh)
-	    state = 19
+	    state = states.player_throw
 	    image_index = 1
 	    image_speed = 0.35
 	}
 	if ((!key_attack) && sprite_index == spr_player_punchprep)
 	{
-	    state = 25
+	    state = states.punch
 	    image_index = 1
 	    image_speed = 0.35
 	}
 	if ((!key_attack) && sprite_index == spr_player_backkickprep)
 	{
-	    state = 26
+	    state = states.backkick
 	    image_index = 1
 	    image_speed = 0.35
 	}
@@ -40,7 +40,7 @@ function scr_player_grab()
 	{
 	    scr_sound(sfx_spin)
 	    vsp = -9
-	    state = 20
+	    state = states.slam
 	    image_index = 0
 	    image_speed = 0.35
 	}
@@ -48,25 +48,25 @@ function scr_player_grab()
 	{
 	    scr_sound(sfx_spin)
 	    vsp = -13
-	    state = 20
+	    state = states.slam
 	    image_index = 0
 	    image_speed = 0.35
 	}
 	if ((!key_attack) && sprite_index == spr_player_uppunchprep)
 	{
-	    state = 27
+	    state = states.uppunch
 	    image_index = 1
 	    image_speed = 0.35
 	}
 	if ((!key_attack) && throwforce < 20 && sprite_index == spr_player_shoulderprep)
 	{
-	    state = 28
+	    state = states.shoulder
 	    image_index = 1
 	    image_speed = 0.35
 	}
 	if ((!key_attack) && throwforce >= 20 && sprite_index == spr_player_shoulderprep)
 	{
-	    state = 28
+	    state = states.shoulder
 	    image_index = 1
 	    image_speed = 0.35
 	    with (obj_baddie)

@@ -40,7 +40,7 @@ function scr_player_mach1()
 	{
 	    momemtum = 1
 	    vsp = -9
-	    state = 36
+	    state = states.jump
 	    jumpAnim = 1
 	    image_index = 0
 	}
@@ -50,14 +50,14 @@ function scr_player_mach1()
 	        mach2++
 	    if (mach2 >= 35)
 	    {
-	        state = 48
+	        state = states.mach2
 	        instance_create(x, y, obj_jumpdust)
 	    }
 	}
 	if (!(place_meeting(x, (y + 1), obj_collisionparent)))
 	{
 	    momemtum = 1
-	    state = 36
+	    state = states.jump
 	    jumpAnim = 0
 	    image_index = 0
 	}
@@ -71,7 +71,7 @@ function scr_player_mach1()
 	if key_down
 	{
 	    scr_sound(sfx_slide)
-	    state = 46
+	    state = states.crouchslide
 	    mach2 = 0
 	}
 	audio_sound_gain(sfx_mach1, 0.7, 0)

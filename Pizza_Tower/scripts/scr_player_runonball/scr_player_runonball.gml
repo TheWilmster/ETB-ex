@@ -18,7 +18,7 @@ function scr_player_runonball()
 	if (key_jump && place_meeting(x, (y + 1), obj_collisionparent) && (!key_down) && (!key_attack))
 	{
 	    vsp = -7
-	    state = 36
+	    state = states.jump
 	    image_index = 0
 	    machslideAnim = 1
 	    jumpAnim = 1

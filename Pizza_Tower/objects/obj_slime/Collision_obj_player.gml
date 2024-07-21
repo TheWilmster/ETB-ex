@@ -13,7 +13,7 @@ with (obj_player)
             stompAnim = 1
             vsp = -14
             other.alarm[0] = 150
-            state = 36
+            state = states.jump
         }
     }
 }

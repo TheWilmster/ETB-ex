@@ -2,7 +2,7 @@ with (obj_player)
 {
     if (state != 51 && state != 48 && state != 68 && state != 56 && state != 52 && state != 64 && state != 50 && hurted == 0 && barrel == 0)
     {
-        state = 51
+        state = states.hurt
         obj_player.image_index = 0
         obj_player.flash = 1
         obj_player.hsp = (sign((x - other.x)) * 5)
@@ -15,7 +15,7 @@ with (obj_player)
     else if (barrel == 1 && state != 64)
     {
         barrel = 0
-        state = 51
+        state = states.hurt
         obj_player.image_index = 0
         obj_player.flash = 1
         obj_player.hsp = (sign((x - other.x)) * 5)
@@ -45,7 +45,7 @@ if ((obj_player.mach2 >= 35 || obj_player.state == 52 || obj_player.state == 25)
     instance_destroy()
     with (obj_player)
     {
-        state = 25
+        state = states.punch
         machslideAnim = 1
         image_index = 0
     }

@@ -19,7 +19,7 @@ function scr_player_Sjumpland()
 	sprite_index = spr_player_superjumpland
 	if (floor(image_index) == 6)
 	{
-	    state = 36
+	    state = states.jump
 	    jumpAnim = 0
 	}
 	scr_collideandmove()

@@ -1,7 +1,7 @@
 if (stun == 0 && obj_player.y >= y && obj_player.attacking == 0 && obj_player.state != 51 && obj_player.state != 50 && obj_player.state != 35 && (!(vsp < 0)) && obj_player.instakillmove == 0)
 {
     obj_player.image_index = 0
-    obj_player.state = 50
+    obj_player.state = states.bump
     if (x != other.x)
     {
         obj_player.image_xscale = (-(sign((obj_player.x - x))))
@@ -49,7 +49,7 @@ if (obj_player.y < y && obj_player.state != 51 && obj_player.attacking == 0 && o
             obj_player.vsp = -11
         if obj_player.key_up
         {
-            obj_player.state = 10
+            obj_player.state = states.highjump
             obj_player.vsp = -14
         }
         instance_create(obj_player.x, (obj_player.y + 40), obj_stompeffect)
@@ -57,7 +57,7 @@ if (obj_player.y < y && obj_player.state != 51 && obj_player.attacking == 0 && o
     else if (obj_player.state != 50)
     {
         obj_player.image_index = 0
-        obj_player.state = 50
+        obj_player.state = states.bump
         if (x != other.x)
             obj_player.image_xscale = (-(sign((obj_player.x - x))))
         obj_player.hsp = (sign((other.x - x)) * 3)
@@ -78,7 +78,7 @@ if (obj_player.y < y && obj_player.state != 51 && obj_player.attacking == 0 && o
 if (stun == 0 && obj_player.attacking == 1 && obj_player.state != 51 && obj_player.state != 35 && (!(vsp < 0)) && obj_player.instakillmove == 0)
 {
     obj_player.image_index = 0
-    obj_player.state = 35
+    obj_player.state = states.tackle
     if (x != other.x)
     {
         obj_player.image_xscale = (-(sign((obj_player.x - x))))
@@ -158,7 +158,7 @@ with (obj_player)
                 grabbed = 1
             vsp = -4
             image_index = 0
-            state = 29
+            state = states.backbreaker
         }
         else if (attacking == 0)
         {
@@ -166,7 +166,7 @@ with (obj_player)
                 grabbed = 1
             image_index = 0
             hsp = 0
-            state = 24
+            state = states.grab
             instance_create((x + (image_xscale * 60)), (y + 10), obj_punchdust)
         }
     }

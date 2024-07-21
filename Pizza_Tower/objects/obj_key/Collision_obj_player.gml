@@ -7,7 +7,7 @@ if (inv_frame == 0 && obj_player.state != 51)
 }
 if (global.keyget == 0)
 {
-    obj_player.state = 34
+    obj_player.state = states.keyget
     image_index = 0
     global.keyget = 1
     audio_pause_all()

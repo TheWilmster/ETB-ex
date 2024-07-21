@@ -15,21 +15,21 @@ function scr_player_mach4()
 	if ((!key_attack) && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    flash = 0
-	    state = 49
+	    state = states.machslide
 	    image_index = 0
 	    mach2 = 35
 	}
 	if (move == -1 && image_xscale == 1 && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    flash = 0
-	    state = 49
+	    state = states.machslide
 	    image_index = 0
 	    mach2 = 35
 	}
 	if (move == 1 && image_xscale == -1 && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    flash = 0
-	    state = 49
+	    state = states.machslide
 	    image_index = 0
 	    mach2 = 35
 	}
@@ -37,14 +37,14 @@ function scr_player_mach4()
 	{
 	    instance_create(x, y, obj_jumpdust)
 	    flash = 0
-	    state = 15
+	    state = states.machroll
 	}
 	if key_up
 	{
 	    vsp = -4
 	    instance_create(x, y, obj_machsuperjump1)
 	    instance_create(x, y, obj_machsuperjump2)
-	    state = 43
+	    state = states.Sjumpprep
 	    hsp = 0
 	    image_index = 0
 	    flash = 1
@@ -72,7 +72,7 @@ function scr_player_mach4()
 	    }
 	    flash = 0
 	    combo = 0
-	    state = 50
+	    state = states.bump
 	    hsp = -2.5
 	    vsp = -2.5
 	    mach2 = 0
@@ -93,7 +93,7 @@ function scr_player_mach4()
 	    image_speed = 0.35
 	    flash = 0
 	    combo = 0
-	    state = 50
+	    state = states.bump
 	    hsp = 2.5
 	    vsp = -2.5
 	    mach2 = 0

@@ -40,7 +40,7 @@ function scr_player_shotgunjump()
 	{
 	    stompAnim = 0
 	    vsp = -9
-	    state = 36
+	    state = states.jump
 	    jumpAnim = 1
 	    jumpstop = 0
 	    image_index = 0

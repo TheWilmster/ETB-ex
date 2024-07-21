@@ -4,7 +4,7 @@ with (obj_player)
     {
         vsp = -15
         if (state == 52)
-            state = 36
+            state = states.jump
         jumpAnim = 0
     }
 }

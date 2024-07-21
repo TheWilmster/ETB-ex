@@ -13,7 +13,7 @@ function scr_player_mach2()
 	{
 	    machfreefall++
 	    if (machfreefall > 30)
-	        state = 18
+	        state = states.machfreefall
 	}
 	else
 	    machfreefall = 0
@@ -45,21 +45,21 @@ function scr_player_mach2()
 	if ((!key_attack) && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    scr_sound(sfx_slide)
-	    state = 49
+	    state = states.machslide
 	    image_index = 0
 	    mach2 = 35
 	}
 	if (move == -1 && xscale == 1 && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    scr_sound(sfx_slide)
-	    state = 49
+	    state = states.machslide
 	    image_index = 0
 	    mach2 = 35
 	}
 	if (move == 1 && xscale == -1 && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    scr_sound(sfx_slide)
-	    state = 49
+	    state = states.machslide
 	    image_index = 0
 	    mach2 = 35
 	}
@@ -67,7 +67,7 @@ function scr_player_mach2()
 	{
 	    scr_sound(sfx_slide)
 	    machhitAnim = 0
-	    state = 46
+	    state = states.crouchslide
 	}
 	if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
 	{
@@ -81,7 +81,7 @@ function scr_player_mach2()
 	if (place_meeting((x + 1), y, obj_bumpable) && xscale == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    machhitAnim = 0
-	    state = 50
+	    state = states.bump
 	    hsp = -2.5
 	    vsp = -3
 	    mach2 = 0
@@ -94,7 +94,7 @@ function scr_player_mach2()
 	else if (place_meeting((x - 1), y, obj_bumpable) && xscale == -1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
 	    machhitAnim = 0
-	    state = 50
+	    state = states.bump
 	    hsp = 2.5
 	    vsp = -3
 	    mach2 = 0

@@ -6,7 +6,7 @@ function scr_player_skateboard()
 	hsp = floor((xscale * movespeed))
 	if key_jump
 	{
-	    state = 48
+	    state = states.mach2
 	    vsp = -6
 	    with (instance_create((x + (xscale * movespeed)), y, obj_skateboard))
 	    {
@@ -18,7 +18,7 @@ function scr_player_skateboard()
 	if (place_meeting((x + 1), y, obj_bumpable) && xscale == 1)
 	{
 	    machhitAnim = 0
-	    state = 50
+	    state = states.bump
 	    hsp = -2.5
 	    vsp = -3
 	    mach2 = 0
@@ -33,7 +33,7 @@ function scr_player_skateboard()
 	else if (place_meeting((x - 1), y, obj_bumpable) && xscale == -1)
 	{
 	    machhitAnim = 0
-	    state = 50
+	    state = states.bump
 	    hsp = 2.5
 	    vsp = -3
 	    mach2 = 0

@@ -8,7 +8,7 @@ if (global.panic == 1)
                 instance_create(x, y, obj_endlevelfade)
             if (state != 56)
             {
-                state = 56
+                state = states.door
                 obj_endlevelfade.alarm[0] = 400
                 image_index = 0
             }

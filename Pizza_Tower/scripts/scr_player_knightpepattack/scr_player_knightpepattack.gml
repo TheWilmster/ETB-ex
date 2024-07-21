@@ -11,7 +11,7 @@ function scr_player_knightpepattack()
 	{
 	    image_index = 0
 	    sprite_index = spr_knightpep_idle
-	    state = 2
+	    state = states.knightpep
 	}
 	image_speed = 0.35
 	scr_collideandmove()

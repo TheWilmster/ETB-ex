@@ -19,7 +19,7 @@ if place_meeting((x - 1), y, obj_player)
 {
     if (obj_player.mach2 >= 35 || obj_player.state == 52 || obj_player.state == 25 || obj_player.state == 64)
     {
-        obj_player.state = 35
+        obj_player.state = states.tackle
         obj_player.image_index = 0
         hsp = 10
         bump = 1

@@ -1,6 +1,6 @@
 if ((state == 36 || state == 41 || state == 48 || obj_player.state == 68) && y > other.y && other.drop == 0)
 {
-    state = 53
+    state = states.hang
     image_xscale = 1
     other.hooked = 1
     if (mach2 >= 35)

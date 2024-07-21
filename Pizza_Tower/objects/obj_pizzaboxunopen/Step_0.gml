@@ -29,7 +29,7 @@ if (place_meeting(x, y, obj_player) && (obj_player.key_jump2 || obj_player.state
         image_index = 0
         stompAnim = 1
         vsp = -14
-        state = 36
+        state = states.jump
     }
 }
 if (sprite_index == spr_pizzaboxopen && floor(image_index) == 3 && createdpizza == 0)

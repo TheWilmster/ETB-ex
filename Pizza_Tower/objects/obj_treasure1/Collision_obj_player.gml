@@ -10,7 +10,7 @@ with (obj_player)
             scr_sound(va_happy1, va_happy2, va_happy3)
         }
         if (other.sprite_index == spr_treasure1)
-            state = 1
+            state = states.gottreasure
         other.sprite_index = spr_treasure1pick
         other.x = obj_player.x
         other.y = (obj_player.y - 35)

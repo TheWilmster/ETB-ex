@@ -14,13 +14,13 @@ function scr_player_barrelnormal()
 	}
 	if ((key_down && place_meeting(x, (y + 1), obj_collisionparent)) || place_meeting(x, (y - 3), obj_collisionparent))
 	{
-	    state = 57
+	    state = states.barrelcrouch
 	    image_index = 0
 	}
 	if (key_attack && place_meeting(x, (y + 1), obj_collisionparent))
 	{
 	    movespeed = 0
-	    state = 60
+	    state = states.barrelmach1
 	    landAnim = 0
 	}
 	if place_meeting(x, y, obj_water2)

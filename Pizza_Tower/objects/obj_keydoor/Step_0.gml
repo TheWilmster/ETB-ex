@@ -1,7 +1,7 @@
-if (obj_player.state == 0 && obj_player.key_up && global.key_inv == 1 && place_meeting(x, y, obj_player))
+if (obj_player.state == states.normal && obj_player.key_up && global.key_inv == 1 && place_meeting(x, y, obj_player))
 {
     scr_sound(sfx_land)
-    obj_player.state = 42
+    obj_player.state = states.victory
     obj_player.image_index = 0
     image_index = 0
     sprite_index = spr_doorkeyopen

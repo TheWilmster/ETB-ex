@@ -4,7 +4,7 @@ if (!(obj_player.y < y))
     {
         if ((state != 51 && mach2 < 35 && state != 52 && state != 35 && state != 64 && state != 50 && hurted == 0 && barrel == 0) || (other.charging == 1 && hurted == 0))
         {
-            state = 51
+            state = states.hurt
             obj_player.image_index = 0
             obj_player.flash = 1
             obj_player.hsp = (sign((x - other.x)) * 5)
@@ -17,7 +17,7 @@ if (!(obj_player.y < y))
         else if (barrel == 1 && state != 64)
         {
             barrel = 0
-            state = 51
+            state = states.hurt
             obj_player.image_index = 0
             obj_player.flash = 1
             obj_player.hsp = (sign((x - other.x)) * 5)
@@ -50,7 +50,7 @@ if ((obj_player.mach2 >= 35 || obj_player.state == 52 || obj_player.state == 25 
 {
     flash = 1
     stunned = 1
-    obj_player.state = 35
+    obj_player.state = states.tackle
     obj_player.image_index = 0
     if (obj_player.x != x)
         image_xscale = sign((obj_player.x - x))

@@ -21,7 +21,7 @@ function scr_player_freefallland()
 	    state = 0
 	if (floor(image_index) == 6 && superslam > 30)
 	{
-	    state = 18
+	    state = states.machfreefall
 	    vsp = -7
 	}
 	scr_collideandmove()

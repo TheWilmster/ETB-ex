@@ -9,7 +9,7 @@ function scr_player_machroll()
 	if (((!key_down) && (!(place_meeting((x + 27), (y - 32), obj_collisionparent))) && (!(place_meeting((x - 27), (y - 32), obj_collisionparent))) && (!(place_meeting(x, (y - 32), obj_collisionparent))) && (!(place_meeting(x, (y - 16), obj_collisionparent))) && key_attack) || (!(place_meeting(x, (y + 1), obj_collisionparent))))
 	{
 	    machhitAnim = 1
-	    state = 48
+	    state = states.mach2
 	}
 	if (place_meeting((x + 1), y, obj_bumpable) && xscale == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
@@ -35,7 +35,7 @@ function scr_player_machroll()
 	    }
 	    flash = 0
 	    combo = 0
-	    state = 50
+	    state = states.bump
 	    hsp = -2.5
 	    vsp = -3
 	    mach2 = 0
@@ -57,7 +57,7 @@ function scr_player_machroll()
 	    image_speed = 0.35
 	    flash = 0
 	    combo = 0
-	    state = 50
+	    state = states.bump
 	    hsp = 2.5
 	    vsp = -3
 	    mach2 = 0

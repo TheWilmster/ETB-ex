@@ -6,7 +6,7 @@ function scr_player_freefall()
 	landAnim = 1
 	if key_attack2
 	{
-	    state = 48
+	    state = states.mach2
 	    vsp = 0
 	    mach2 = 35
 	}
@@ -15,10 +15,10 @@ function scr_player_freefall()
 	else
 	    superslam = 0
 	if (superslam > 30)
-	    state = 21
+	    state = states.superslam
 	if (place_meeting(x, (y + 1), obj_collisionparent) && (!(place_meeting(x, (y + 1), obj_destructibles))))
 	{
-	    state = 55
+	    state = states.freefallland
 	    jumpAnim = 1
 	    jumpstop = 0
 	    with (obj_baddie)

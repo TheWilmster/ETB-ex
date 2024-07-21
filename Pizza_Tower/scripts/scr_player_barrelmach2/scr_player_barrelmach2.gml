@@ -19,7 +19,7 @@ function scr_player_barrelmach2()
 	if (place_meeting((x + 1), y, obj_solid) && image_xscale == 1)
 	{
 	    barrel = 0
-	    state = 50
+	    state = states.bump
 	    hsp = -2
 	    vsp = -2
 	    mach2 = 0
@@ -39,7 +39,7 @@ function scr_player_barrelmach2()
 	if (place_meeting((x - 1), y, obj_solid) && image_xscale == -1)
 	{
 	    barrel = 0
-	    state = 50
+	    state = states.bump
 	    hsp = 2
 	    vsp = -2
 	    mach2 = 0

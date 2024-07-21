@@ -17,7 +17,7 @@ function scr_player_Sjumpprep()
 	if (floor(image_index) == 6)
 	{
 	    audio_play_sound(sfx_plane, 1, false)
-	    state = 41
+	    state = states.Sjump
 	    vsp = -15
 	}
 	sprite_index = spr_player_superjumpprep

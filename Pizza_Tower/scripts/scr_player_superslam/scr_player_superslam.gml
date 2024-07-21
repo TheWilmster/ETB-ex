@@ -7,7 +7,7 @@ function scr_player_superslam()
 	if (place_meeting(x, (y + 1), obj_bumpable) && (!(place_meeting(x, (y + 1), obj_destructibles))))
 	{
 	    scr_sound(sfx_superimpact)
-	    state = 55
+	    state = states.freefallland
 	    jumpAnim = 1
 	    jumpstop = 0
 	    image_index = 0

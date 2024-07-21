@@ -22,7 +22,7 @@ function scr_player_knightpep()
 	    instance_create((x + ((-xscale) * 10)), y, obj_slidecloud)
 	    sprite_index = spr_knightpep_attack
 	    image_index = 0
-	    state = 3
+	    state = states.knightpepattack
 	}
 	if (place_meeting(x, (y + 1), obj_collisionparent) && xscale == 1 && move == -1)
 	    movespeed = 0

@@ -28,7 +28,7 @@ function scr_player_chainsaw()
 	if (key_down && place_meeting(x, (y + 1), obj_collisionparent) && movespeed > 0)
 	{
 	    machhitAnim = 0
-	    state = 46
+	    state = states.crouchslide
 	}
 	audio_sound_gain(sfx_mach2, 0.7, 0)
 	if (!audio_is_playing(sfx_mach2))

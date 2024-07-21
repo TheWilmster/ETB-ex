@@ -24,7 +24,7 @@ function scr_player_crouchjump()
 	}
 	if (place_meeting(x, (y + 1), obj_collisionparent) && key_down)
 	{
-	    state = 44
+	    state = states.crouch
 	    jumpAnim = 1
 	    crouchAnim = 1
 	    image_index = 0
@@ -49,7 +49,7 @@ function scr_player_crouchjump()
 	}
 	if place_meeting(x, (y + 1), obj_collisionparent)
 	{
-	    state = 44
+	    state = states.crouch
 	    jumpAnim = 1
 	    crouchAnim = 1
 	    image_index = 0

@@ -14,7 +14,7 @@ function scr_player_crouch()
 	if ((!(place_meeting(x, (y + 1), obj_collisionparent))) && (!key_jump))
 	{
 	    jumpAnim = 0
-	    state = 45
+	    state = states.crouchjump
 	    movespeed = 4
 	    crouchAnim = 1
 	    image_index = 0
@@ -22,7 +22,7 @@ function scr_player_crouch()
 	if (key_jump && place_meeting(x, (y + 1), obj_collisionparent) && (!(place_meeting(x, (y - 16), obj_collisionparent))) && (!(place_meeting(x, (y - 32), obj_collisionparent))))
 	{
 	    vsp = -9.2
-	    state = 45
+	    state = states.crouchjump
 	    movespeed = 4
 	    image_index = 0
 	    crouchAnim = 1
