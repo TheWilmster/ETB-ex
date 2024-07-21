@@ -85,5 +85,5 @@ if (instance_exists(obj_player) && obj_player.state != 14 && obj_player.state !=
     target = obj_player
 	var px = (target.x - (w / 2)) + irandom_range((-shake_mag), shake_mag);
 	var py = (target.y - (h / 2)) + irandom_range((-shake_mag), shake_mag);
-	camera_set_view_pos(cam, clamp(px, 0, (room_width - w)), clamp(py, 0, (room_height - h)));
+	camera_set_view_pos(cam, clamp(px, irandom_range((-shake_mag), shake_mag), (room_width - w)) + irandom_range((-shake_mag), shake_mag), clamp(py, irandom_range((-shake_mag), shake_mag), (room_height - h)) + irandom_range((-shake_mag), shake_mag));
 }
