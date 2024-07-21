@@ -1,7 +1,7 @@
 with (obj_player)
 {
     if (place_meeting(x, (y + 1), obj_runonball) && x >= (obj_runonball.x - 8) && x <= (obj_runonball.x + 8) && (state == 0 || state == 44 || state == 47 || state == 48))
-        state = 67
+        state = states.runonball
 }
 if (vsp < 12)
     vsp += grav

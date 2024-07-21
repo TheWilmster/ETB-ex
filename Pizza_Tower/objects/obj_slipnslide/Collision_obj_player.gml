@@ -11,7 +11,7 @@ with (obj_player)
     {
         image_index = 0
         other.drop = 1
-        state = 63
+        state = states.barrelslipnslide
         if (movespeed < 8)
             movespeed = 8
     }

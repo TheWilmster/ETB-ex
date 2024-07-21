@@ -7,12 +7,12 @@ function scr_player_barrelmach2()
 	    vsp += grav
 	if (!(place_meeting(x, (y + 1), obj_solid)))
 	{
-	    state = 61
+	    state = states.barrelfall
 	    image_index = 0
 	}
 	if ((!key_attack) && place_meeting(x, (y + 1), obj_solid))
 	{
-	    state = 62
+	    state = states.barrelnormal
 	    image_index = 0
 	    mach2 = 0
 	}

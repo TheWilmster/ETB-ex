@@ -10,4 +10,6 @@ with (other.id)
     cantcollect = 0
     flicker = 0
 }
-depth = 300;
+depth = 2;
+if (layer_exists("Tiles_Depth1"))
+	depth = layer_get_depth("Tiles_Depth1") + 1;

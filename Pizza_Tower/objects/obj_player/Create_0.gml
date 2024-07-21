@@ -65,3 +65,79 @@ bombpephitwall = 0
 idleanim = 0
 momemtum = 0
 depth = -10;
+
+enum states
+{
+	normal, //0
+	gottreasure, //1
+	knightpep, //2
+	knightpepattack, //3
+	meteorpep, //4
+	bombpep, //5
+	grabbing, //6
+	chainsawpogo, //7
+	shotgunjump, //8
+	stunned, //9
+	highjump, //10
+	chainsaw, //11
+	facestomp, //12
+	mach4, //13
+	timesup,
+	machroll,
+	shotgun,
+	pistol,
+	machfreefall,
+	player_throw,
+	slam,
+	superslam,
+	skateboard,
+	grind,
+	grab,
+	punch,
+	backkick,
+	uppunch,
+	shoulder,
+	backbreaker,
+	bossdefeat,
+	pizzathrow,
+	bossintro,
+	gameover,
+	keyget,
+	tackle,
+	jump,
+	ladder,
+	slipnslide,
+	comingoutdoor,
+	smirk,
+	Sjump,
+	victory,
+	Sjumpprep,
+	crouch,
+	crouchjump,
+	crouchslide,
+	mach1,
+	mach2,
+	machslide,
+	bump,
+	hurt,
+	freefall,
+	hang,
+	unknown_54,
+	freefallland,
+	door,
+	barrelcrouch,
+	barrelfloat,
+	barrelmach2,
+	barrelmach1,
+	barrelfall,
+	barrelnormal,
+	barrelslipnslide,
+	barrelroll,
+	current,
+	boulder,
+	runonball,
+	mach3,
+	freefallprep,
+	Sjumpland,
+	stairs
+}

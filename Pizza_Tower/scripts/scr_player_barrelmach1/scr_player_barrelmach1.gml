@@ -13,25 +13,25 @@ function scr_player_barrelmach1()
 	    if (mach2 >= 35)
 	    {
 	        image_index = 0
-	        state = 63
+	        state = states.barrelslipnslide
 	        flash = 1
 	    }
 	}
 	if (!(place_meeting(x, (y + 1), obj_collisionparent)))
 	{
-	    state = 61
+	    state = states.barrelfall
 	    image_index = 0
 	    hsp = 0
 	}
 	if ((!key_attack) && place_meeting(x, (y + 1), obj_collisionparent))
 	{
-	    state = 62
+	    state = states.barrelnormal
 	    image_index = 0
 	    mach2 = 0
 	}
 	if (place_meeting((x + 1), y, obj_collisionparent) && image_xscale == 1)
 	{
-	    state = 61
+	    state = states.barrelfall
 	    hsp = -2
 	    vsp = -2
 	    mach2 = 0
@@ -40,7 +40,7 @@ function scr_player_barrelmach1()
 	}
 	if (place_meeting((x - 1), y, obj_collisionparent) && image_xscale == -1)
 	{
-	    state = 61
+	    state = states.barrelfall
 	    hsp = 2
 	    vsp = -2
 	    mach2 = 0

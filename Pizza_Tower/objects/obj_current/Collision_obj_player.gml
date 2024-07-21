@@ -1,1 +1,1 @@
-obj_player.state = 65
+obj_player.state = states.current

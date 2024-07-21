@@ -2,25 +2,25 @@ with (obj_player)
 {
     switch state
     {
-        case 0:
+        case states.normal:
             scr_player_normal()
             break
-        case 1:
+        case states.gottreasure:
             scr_player_gottreasure()
             break
-        case 2:
+        case states.knightpep:
             scr_player_knightpep()
             break
-        case 3:
+        case states.knightpepattack:
             scr_player_knightpepattack()
             break
-        case 4:
+        case states.meteorpep:
             scr_player_meteorpep()
             break
-        case 5:
+        case states.bombpep:
             scr_player_bombpep()
             break
-        case 6:
+        case states.grabbing:
             scr_player_grabbing()
             break
         case 7:
@@ -50,11 +50,11 @@ with (obj_player)
         case 15:
             scr_player_machroll()
             break
+		case 16:
+            scr_player_shotgun()
+            break
         case 17:
             scr_player_pistol()
-            break
-        case 16:
-            scr_player_shotgun()
             break
         case 18:
             scr_player_machfreefall()
@@ -62,11 +62,11 @@ with (obj_player)
         case 19:
             scr_player_throw()
             break
-        case 21:
-            scr_player_superslam()
-            break
         case 20:
             scr_player_slam()
+            break
+		case 21:
+            scr_player_superslam()
             break
         case 22:
             scr_player_skateboard()
@@ -95,56 +95,41 @@ with (obj_player)
         case 30:
             scr_player_bossdefeat()
             break
+		case 31:
+            scr_player_pizzathrow()
+            break
         case 32:
             scr_player_bossintro()
+            break
+		case 33:
+            scr_player_gameover()
+            break
+		case 34:
+            scr_player_keyget()
+            break
+		case 35:
+            scr_player_tackle()
+            break
+		case 36:
+            scr_player_jump()
+            break
+		case 37:
+            scr_player_ladder()
+            break
+		case 38:
+            scr_player_slipnslide()
+            break
+		case 39:
+            scr_player_comingoutdoor()
             break
         case 40:
             scr_player_smirk()
             break
-        case 71:
-            scr_player_stairs()
-            break
-        case 31:
-            scr_player_pizzathrow()
-            break
-        case 33:
-            scr_player_gameover()
-            break
-        case 70:
-            scr_player_Sjumpland()
-            break
-        case 69:
-            scr_player_freefallprep()
-            break
-        case 67:
-            scr_player_runonball()
-            break
-        case 66:
-            scr_player_boulder()
-            break
-        case 34:
-            scr_player_keyget()
-            break
-        case 35:
-            scr_player_tackle()
-            break
-        case 38:
-            scr_player_slipnslide()
-            break
-        case 37:
-            scr_player_ladder()
-            break
-        case 36:
-            scr_player_jump()
-            break
-        case 42:
-            scr_player_victory()
-            break
-        case 39:
-            scr_player_comingoutdoor()
-            break
-        case 41:
+		case 41:
             scr_player_Sjump()
+            break
+		case 42:
+            scr_player_victory()
             break
         case 43:
             scr_player_Sjumpprep()
@@ -164,10 +149,7 @@ with (obj_player)
         case 48:
             scr_player_mach2()
             break
-        case 68:
-            scr_player_mach3()
-            break
-        case 49:
+		case 49:
             scr_player_machslide()
             break
         case 50:
@@ -179,34 +161,37 @@ with (obj_player)
         case 52:
             scr_player_freefall()
             break
+		case 53:
+            scr_player_hang()
+            break
+		case 54:
+			//this state does not exist
+			break;
         case 55:
             scr_player_freefallland()
-            break
-        case 53:
-            scr_player_hang()
             break
         case 56:
             scr_player_door()
             break
-        case 62:
-            scr_player_barrelnormal()
-            break
-        case 61:
-            scr_player_barrelfall()
-            break
-        case 60:
-            scr_player_barrelmach1()
-            break
-        case 59:
-            scr_player_barrelmach2()
-            break
-        case 58:
-            scr_player_barrelfloat()
-            break
-        case 57:
+		case 57:
             scr_player_barrelcrouch()
             break
-        case 63:
+		case 58:
+            scr_player_barrelfloat()
+            break
+		case 59:
+            scr_player_barrelmach2()
+            break
+		case 60:
+            scr_player_barrelmach1()
+            break
+		case 61:
+            scr_player_barrelfall()
+            break
+		case 62:
+            scr_player_barrelnormal()
+            break
+		case 63:
             scr_player_barrelslipnslide()
             break
         case 64:
@@ -214,6 +199,24 @@ with (obj_player)
             break
         case 65:
             scr_player_current()
+            break
+		case 66:
+            scr_player_boulder()
+            break
+		case 67:
+            scr_player_runonball()
+            break
+		case 68:
+            scr_player_mach3()
+            break
+		case 69:
+            scr_player_freefallprep()
+            break
+		case 70:
+            scr_player_Sjumpland()
+            break
+        case 71:
+            scr_player_stairs()
             break
     }
 

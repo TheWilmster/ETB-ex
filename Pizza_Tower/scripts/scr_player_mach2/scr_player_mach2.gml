@@ -31,7 +31,7 @@ function scr_player_mach2()
 	    if (mach2 >= 100)
 	    {
 	        machhitAnim = 0
-	        state = 68
+	        state = states.mach3
 	        flash = 1
 	        sprite_index = spr_player_mach4
 	        instance_create(x, y, obj_jumpdust)

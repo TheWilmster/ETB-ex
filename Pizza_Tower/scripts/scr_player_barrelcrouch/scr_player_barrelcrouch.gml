@@ -7,7 +7,7 @@ function scr_player_barrelcrouch()
 	    vsp += grav
 	if (place_meeting(x, (y + 1), obj_collisionparent) && (!key_down) && image_speed == 0)
 	{
-	    state = 62
+	    state = states.barrelnormal
 	    movespeed = 2
 	    image_index = 0
 	}

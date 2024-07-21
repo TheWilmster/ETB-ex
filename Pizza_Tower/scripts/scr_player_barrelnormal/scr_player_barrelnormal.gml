@@ -8,7 +8,7 @@ function scr_player_barrelnormal()
 	    vsp += grav
 	if ((!(place_meeting(x, (y + 1), obj_collisionparent))) && (!key_jump))
 	{
-	    state = 61
+	    state = states.barrelfall
 	    image_index = 0
 	    hsp = 0
 	}

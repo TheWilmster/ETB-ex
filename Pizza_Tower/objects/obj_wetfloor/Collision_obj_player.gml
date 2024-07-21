@@ -9,7 +9,7 @@ with (obj_player)
     if (state == 60 || state == 59)
     {
         image_index = 0
-        state = 63
+        state = states.barrelslipnslide
         if (movespeed < 8)
             movespeed = 8
     }

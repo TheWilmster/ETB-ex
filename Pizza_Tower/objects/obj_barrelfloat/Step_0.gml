@@ -2,7 +2,7 @@ if (obj_player.y < y && enterbarrel == 1 && place_meeting(x, y, obj_player) && o
 {
     if (obj_player.state != 51)
     {
-        obj_player.state = 62
+        obj_player.state = states.barrelnormal
         obj_player.vsp = 10
         obj_player.image_index = 0
         obj_player.barrel = 1

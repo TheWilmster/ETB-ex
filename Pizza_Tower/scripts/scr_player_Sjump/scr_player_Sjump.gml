@@ -19,7 +19,7 @@ function scr_player_Sjump()
 	    sprite_index = spr_player_mach2jump
 	    instance_create(x, y, obj_machsuperjump1)
 	    instance_create(x, y, obj_machsuperjump2)
-	    state = 69
+	    state = states.freefallprep
 	    vsp = -4
 	    mach2 = 35
 	}
@@ -42,7 +42,7 @@ function scr_player_Sjump()
 	        }
 	    }
 	    combo = 0
-	    state = 70
+	    state = states.Sjumpland
 	    image_index = 0
 	    machhitAnim = 0
 	    with (instance_create(x, y, obj_bangeffect))

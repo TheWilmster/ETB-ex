@@ -106,7 +106,7 @@ function scr_player_mach4()
 	if (key_down2 && (!(place_meeting(x, (y + 1), obj_collisionparent))))
 	{
 	    vsp = -4
-	    state = 69
+	    state = states.freefallprep
 	    hsp = 0
 	    image_index = 0
 	}
